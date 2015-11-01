@@ -15,6 +15,8 @@
 		F4D85FF91BE614DA00433E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D85FF71BE614DA00433E30 /* LaunchScreen.storyboard */; };
 		F4D860041BE614DA00433E30 /* BlocksKit_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D860031BE614DA00433E30 /* BlocksKit_iOSTests.m */; };
 		F4D8600F1BE614DA00433E30 /* BlocksKit_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8600E1BE614DA00433E30 /* BlocksKit_iOSUITests.m */; };
+		F4D8601F1BE615CE00433E30 /* PEARBlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8601E1BE615CE00433E30 /* PEARBlocksKit.m */; };
+		F4D860221BE6281A00433E30 /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D860211BE6281A00433E30 /* SampleClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F4D8600A1BE614DA00433E30 /* BlocksKit-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlocksKit-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D8600E1BE614DA00433E30 /* BlocksKit_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocksKit_iOSUITests.m; sourceTree = "<group>"; };
 		F4D860101BE614DA00433E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D8601D1BE615CE00433E30 /* PEARBlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEARBlocksKit.h; sourceTree = "<group>"; };
+		F4D8601E1BE615CE00433E30 /* PEARBlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEARBlocksKit.m; sourceTree = "<group>"; };
+		F4D860201BE6281A00433E30 /* SampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClass.h; sourceTree = "<group>"; };
+		F4D860211BE6281A00433E30 /* SampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		F4D85FDD1BE614DA00433E30 = {
 			isa = PBXGroup;
 			children = (
+				F4D8601C1BE615A200433E30 /* PEAR-BlocksKit-iOS */,
 				F4D85FE81BE614DA00433E30 /* BlocksKit-iOS */,
 				F4D860021BE614DA00433E30 /* BlocksKit-iOSTests */,
 				F4D8600D1BE614DA00433E30 /* BlocksKit-iOSUITests */,
@@ -105,6 +112,8 @@
 				F4D85FED1BE614DA00433E30 /* AppDelegate.m */,
 				F4D85FEF1BE614DA00433E30 /* ViewController.h */,
 				F4D85FF01BE614DA00433E30 /* ViewController.m */,
+				F4D860201BE6281A00433E30 /* SampleClass.h */,
+				F4D860211BE6281A00433E30 /* SampleClass.m */,
 				F4D85FF21BE614DA00433E30 /* Main.storyboard */,
 				F4D85FF51BE614DA00433E30 /* Assets.xcassets */,
 				F4D85FF71BE614DA00433E30 /* LaunchScreen.storyboard */,
@@ -138,6 +147,15 @@
 				F4D860101BE614DA00433E30 /* Info.plist */,
 			);
 			path = "BlocksKit-iOSUITests";
+			sourceTree = "<group>";
+		};
+		F4D8601C1BE615A200433E30 /* PEAR-BlocksKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D8601D1BE615CE00433E30 /* PEARBlocksKit.h */,
+				F4D8601E1BE615CE00433E30 /* PEARBlocksKit.m */,
+			);
+			path = "PEAR-BlocksKit-iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D8601F1BE615CE00433E30 /* PEARBlocksKit.m in Sources */,
+				F4D860221BE6281A00433E30 /* SampleClass.m in Sources */,
 				F4D85FF11BE614DA00433E30 /* ViewController.m in Sources */,
 				F4D85FEE1BE614DA00433E30 /* AppDelegate.m in Sources */,
 				F4D85FEB1BE614DA00433E30 /* main.m in Sources */,

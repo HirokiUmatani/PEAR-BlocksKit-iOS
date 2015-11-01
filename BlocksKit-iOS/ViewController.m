@@ -7,21 +7,45 @@
 //
 
 #import "ViewController.h"
-
+#import "PEARBlocksKit.h"
+#import "SampleClass.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // TEST: Sample1
+    NSLog(@"Self class sample1 method start");
+    [PEARBlocksKit blocksWithClassObject:self
+                                selector:@selector(sample1)
+                             returnValue:NO
+                                 handler:^(id result)
+    {
+        NSLog(@"Self class sample1 method call back return value : %@",result);
+    }];
+    
+    // TEST: Sample2
+    NSLog(@"Sample class sample2 method start");
+    [PEARBlocksKit blocksWithClassObject:[SampleClass new]
+                                selector:@selector(sample2)
+                             returnValue:YES
+                                 handler:^(id result)
+     {
+         NSLog(@"Sample class sample2 method call back value : %@",result);
+     }];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (void)sample1
+{
+    NSLog(@"Self class sample1 method doing !!");
+}
 @end
