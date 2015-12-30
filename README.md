@@ -7,3 +7,9 @@ pod 'PEAR-BlocksKit-iOS'
 
 ### Document
 [document library](http://cocoadocs.org/docsets/PEAR-BlocksKit-iOS)
+
+### Author
+[GitHub](https://github.com/HirokiUmatani)  
+[CocoaPod](https://cocoapods.org/owners/4170)  
+[FaceBook](https://www.facebook.com/hiroki.umatani)  
+[Twitter](https://twitter.com/pearchatHU)  
